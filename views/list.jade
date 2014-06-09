@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Blog
+    ul
+        each blog, i in list
+            li
+                a(href="/content/#{blog._id}")= blog.title

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Blog body
+  p  #{content.body}
+
+  hr
+  p Comments
+  ul
+   each comment, i in commentar
+     p #{commentar[i].comment}
+  
+
+  form#formAddBlog(name="addblog123",method="post",action="/comment")
+    input#inputBlogName(type="text", placeholder="comment", name="comment")
+    input#inputcomment(type="hidden",value="#{content._id}",name="blogid")
+    button#btnSubmit(type="submit") submit

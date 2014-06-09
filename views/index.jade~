@@ -1,0 +1,16 @@
+extends layout
+
+block content
+ <center> 
+ h1= title	
+ <h3><p style="color:blue"> Welcome to the blog!
+ <body style="background-color:yellow;">
+ <p > what is ur name? </p>
+ </body>
+ <button>wasup</button>
+ </p>
+ </h3>
+
+
+
+
